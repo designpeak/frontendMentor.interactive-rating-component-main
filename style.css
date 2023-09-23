@@ -155,3 +155,10 @@ main{
     color: var(--orange);
 }
 
+
+@media screen and (max-width: 425px) {
+    main, .rating, .thankYou{
+        width: 90%;
+    }
+}
+
