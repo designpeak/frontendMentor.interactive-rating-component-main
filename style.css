@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 25%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+
+
+*{
+    margin:0;
+    font-family: 'Overpass', sans-serif;
+    color:white ;
+  }
+
+  body{
+    height: 100vh;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+main{
+    display: flex;
+    width: 100%;
+    max-height: 50vh;
+    
+    flex-direction: row;
+    justify-content: center;
+}
+.rating, .thankYou{
+    display: flex;
+    width: 370px;
+    height: 370px;
+    background-color: var(--darkBlue);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+
+#tyIllustration{
+    width: 150px;
+    height: 100px;
+    margin-top:20px;
+}
+
+.thankYou{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+#selectedCount{
+    margin-top: 50px;
+    background-color: var(--mediumGrey);
+    color: var(--orange);
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 12px;
+    width: 40%;
+    text-align: center;
+}
+
+
+#tyTitle{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 300px;
+
+}
+
+#message{
+    padding: 25px 0px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--lightGrey);
+}
+
+#starIcon{
+    background-color: var(--mediumGrey);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+
+.top{
+    width: 100%;
+}
+
+.content{
+    margin-top: 25px;
+    width: 350px;
+}
+
+.content p{
+    margin-top: 10px;
+    color: var(--lightGrey);
+    line-height: 1.8em;
+}
+
+.score{
+    display: flex;
+    width: 100%;
+}
+
+.mark{
+    background-color: var(--mediumGrey);
+    width: 20px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.mark:last-of-type{
+    margin-right: 0;
+}
+
+.mark:hover{
+    background-color: var(--lightGrey);
+}
+
+.selected{
+    background-color: var(--orange);
+}
+
+.submit{
+    background-color: var(--orange);
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 30px;
+    border: none;
+    color: var(--white);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
